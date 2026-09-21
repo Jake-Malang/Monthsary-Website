@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pictures</title>
+</head>
+
+<style>
+        .next {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 25px;
+            transition: 0.2s;
+        }
+
+        .next:hover {
+            transform: translateX(5px);
+        }
+        .buttons {
+    text-align: center;
+    margin-top: 20px;
+        }
+        /* Three-dot menu */
+        .menu {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        /* Three dots */
+        .menu-button {
+            font-size: 30px;
+            background: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 12px;
+            cursor: pointer;
+        }
+
+        /* Menu options */
+        .menu-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 45px;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        /* Show menu when hovering */
+        .menu:hover .menu-content {
+            display: block;
+        }
+
+        /* Menu links */
+        .menu-content a {
+            display: block;
+            padding: 12px 15px;
+            text-decoration: none;
+            color: black;
+        }
+
+        /* Hover effect */
+        .menu-content a:hover {
+            background-color: #ddd;
+        }
+    </style>
+    
+
+<body>
+
+    <h1>Our Pictures Together 🎉</h1>
+
+<div class="pictures">
+    <img src="Pictures/picture1.jpg" width="500" height="700">
+    <img src="Pictures/picture2.jpg" width="500" height="700">
+    <img src="Pictures/picture3.jpg" width="500" height="700">
+</div>
+
+     <div class="menu">
+
+        <button class="menu-button">⋮</button>
+
+        <div class="menu-content">
+            <a href="monthsary.html">Home</a>
+            <a href="page2.html">Page 2</a>
+            <a href="pictures.html">Pictures</a>
+            <a href="moments.html">Random Moments 3</a>
+        </div>
+
+    </div>
+    
+<div class="buttons">
+    <a href="page2.html" class="next">←</a>
+    <a href="menu.html" class="next">→</a>
+</div>    
+    
+
+</body>
+</html>
